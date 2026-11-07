@@ -30,57 +30,86 @@ it gets joined together and now the first 88 cells of your program follow that s
 
 it'll just loop those cells across the entire screen, as if all the pixels were in one contiguous line one row after the other
 
+#### hello world
 "hello world" after a ~minute of being spawned in
 
-![hello world after a minute of being spawned in](hello_world_b.png)
+![hello world after a minute of being spawned in](imgs/hello_world_b.png)
 
 "hello world" after it stagnates
 
-![alt text](hello_world_c.png)
+![hello world after it stagnates](imgs/hello_world_c.png)
 
+
+#### fcyvgbhnjmkhubg vyftc drxctfgvhbjnkmlk,;m nkbjhgvhgbjhknm
 
 another cool seed is "fcyvgbhnjmkhubg vyftc drxctfgvhbjnkmlk,;m nkbjhgvhgbjhknm", making these cool diagonals and setting off a bunch of gliders
 
 first it starts off like this
 
-![alt text](fcyv_a.png)
+![fcyv start](imgs/fcyv_a.png)
 
 continuing like this, the gliders start going off at the left side
 
-![alt text](fcyv_b.png)
+![fcyv next](imgs/fcyv_b.png)
 
 
 shoutout to these two gliders
 
-![alt text](fcyv_c.png)
+![fcyv glider start](imgs/fcyv_c.png)
 
 who collide into this mass, releasing that top glider
 
-![alt text](fcyv_d.png)
+![fcyv glider collide 1](imgs/fcyv_d.png)
 
 which eventually
 
-![alt text](fcyv_e.png)
+![fcyv glider imminent coliision](imgs/fcyv_e.png)
 
 meets up with this other glider
 
-![alt text](fcyv_f.png)
+![fcyv glider collide 2](imgs/fcyv_f.png)
 
 which end up in this single glider baby
 
-![alt text](fcyv_g.png)
+![fcyv glider baby](imgs/fcyv_g.png)
+
+#### greenday's holiday lyrics
+
+if you input the entire lyrics to Holiday from Green Day (converting new lines to spaces), you get
+
+![holiday lyrics](imgs/holiday.png)
+
+
+#### "just a fun project,"
+inputting that string ends up with
+
+![cool diagonals](imgs/diagonals_a.png)
+
+later becoming
+
+![more cool diagonals](imgs/diagonals_b.png)
+
+eventually stagnating to
+
+![no more diagonals :(](imgs/diagonals_c.png)
+
+#### this README.md
+
+if you just place this entire readme as the seed (converting new lines to spaces), you get
+
+![entire readme file](imgs/readme.png)
 
 ### preset
 the only real preset right now is a glider gun, which will be made at about 1/4\*monitor width, 1/4\*monitor height and just create gliders
 
-![glider gun](glider_gun_a.png)
+![glider gun](imgs/glider_gun_a.png)
 
 they'll go around the whole screen, eventually coming back to the glider gun after like 15 minutes i think and destroying it
 
 however once destroyed it ends up not interfering anymore and you have a cool loop of probably a thousand gliders with a gap
 
-![glider gun destroyed with long line of gliders](glider_gun_b.png)
+![glider gun destroyed with long line of gliders](imgs/glider_gun_b.png)
 
 the other preset is random noise, and yeah its cool
 
-![random noise](noise.png)
+![random noise](imgs/noise.png)
