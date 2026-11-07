@@ -37,12 +37,13 @@ it'll just loop those cells across the entire screen, as if all the pixels were 
 ![alt text](hello_world_c.png)
 
 ### preset
-the only real preset right now is a glider gun, which will be made at x, y and just create gliders
+the only real preset right now is a glider gun, which will be made at about 1/4\*monitor width, 1/4\*monitor height and just create gliders
 
 ![glider gun](glider_gun_a.png)
 
 they'll go around the whole screen, eventually coming back to the glider gun after like 15 minutes i think and destroying it
-however once destroyed it ends up not interfering anymore and you have a cool loop of probably a thousand glider with a gap
+
+however once destroyed it ends up not interfering anymore and you have a cool loop of probably a thousand gliders with a gap
 
 ![glider gun destroyed with long line of gliders](glider_gun_b.png)
 
