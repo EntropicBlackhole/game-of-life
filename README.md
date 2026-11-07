@@ -2,24 +2,31 @@ just a fun project,
 uses raylib
 
 # build
+if you want to compile it yourself on windows with gcc/mingw:
+
 `gcc main.c -o main.exe -O3 -s -L. -lraylib -lopengl32 -lgdi32 -lwinmm`
 
-or just run main.exe by clicking on it
+or just run `main.exe` by clicking on it (make sure the `presets` folder is in the same directory if you want to load presets)
 
 # sim
 
 it'll open a terminal window for [options](#options),
-after that it'll spawn a fullscreen window of conways gol
+after that it'll spawn a fullscreen borderless window of conways gol running at 60 fps
 
-each cell will be one pixel, the screen loops around like a torus
+each cell will be one pixel, matching your monitor's resolution, and the screen loops around at the edges like a torus
 so sure lets say its a 2d projection of a torus
 
+you can press `esc` at any time to close the window, and the terminal will print out how many generations the simulation ran for
+
 ## options
-you can either input a seed or choose a preset
+from the terminal menu you can pick between 3 options:
+1. input a custom string seed
+2. choose a preset (loaded from `./presets`)
+3. random noise
 
 ### seed
-you can place any text you like
-it'll grab your string, grab each character and from its ascii value it'll fill in cells periodically
+you can place any text you like (up to 4095 characters)
+it'll grab your string, grab each character and from its 8-bit ascii value it'll fill in cells periodically
 
 example:
 seed: "hello world"
@@ -100,7 +107,25 @@ if you just place this entire readme as the seed (converting new lines to spaces
 ![entire readme file](imgs/readme.png)
 
 ### preset
-the only real preset right now is a glider gun, which will be made at about 1/4\*monitor width, 1/4\*monitor height and just create gliders
+presets are loaded from `.dat` or `.txt` files inside the `./presets` folder (up to 10 files). you can make your own by following this format:
+
+```text
+name:gosper glider gun
+position:0.25,0.25
+000000000000000000000000100000000000
+000000000000000000000010100000000000
+000000000000110000001100000000000011
+000000000001000100001100000000000011
+110000000010000010001100000000000000
+110000000010001011000010100000000000
+000000000010000010000000100000000000
+000000000001000100000000000000000000
+000000000000110000000000000000000000
+```
+
+`position` is a ratio from `0.0` to `1.0` of your screen's width and height for where the top-left corner of the pattern spawns.
+
+the main preset right now is a glider gun, which will be made at about 1/4\*monitor width, 1/4\*monitor height and just create gliders
 
 ![glider gun](imgs/glider_gun_a.png)
 
@@ -110,6 +135,7 @@ however once destroyed it ends up not interfering anymore and you have a cool lo
 
 ![glider gun destroyed with long line of gliders](imgs/glider_gun_b.png)
 
-the other preset is random noise, and yeah its cool
+### random noise
+the 3rd option in the menu is random noise (roughly 30% live cells across the screen), and yeah its cool
 
 ![random noise](imgs/noise.png)
